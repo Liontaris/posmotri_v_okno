@@ -48,9 +48,6 @@ ol {
 }
 
 .content {
-  /* width: 1140px; 
-  min-height: 534px; 
-  margin: auto; */
   padding: 133px 30px;
   display: flex;
   justify-content: center;
@@ -61,16 +58,14 @@ ol {
 .result {
   width: 711px;
 }
+
 .result__video-container {
-  /* width: 710px; 
-  width: 711px; 
-  height: 388px;
-  /* margin-top: 77px; */
   position: relative;
 }
 
 .result__video {
   object-fit: cover;
+  object-position: center;
   width: 711px;
   height: 383px;
 }
@@ -111,8 +106,8 @@ ol {
   border: 0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  font-family: Fira Sans Condensed;
-  color: rgba(255, 255, 255, 0.70);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #fff;
   font-size: 18px;
 }
 
@@ -173,7 +168,8 @@ ol {
 .button {
   cursor: pointer;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   border: 1px solid #fff;
   background-color: transparent;
@@ -205,11 +201,10 @@ ol {
 
 .content__details {
   width: 400px;
- /* min-height: 534px; */
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
@@ -226,12 +221,7 @@ ol {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  gap: 25px;
   position: relative;
-}
-
-.content__list-item {
-  width: 100%;
 }
 
 .content__list::-webkit-scrollbar {
@@ -241,6 +231,14 @@ ol {
 
 .content__list::-webkit-scrollbar-thumb {
   background-color: #545050;
+}
+
+.content__list-item {
+  width: 100%;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .content__card-link {
@@ -272,7 +270,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   line-height: 100%; /* 30px */
   text-transform: uppercase;
@@ -296,9 +294,5 @@ ol {
 .content__video-card-thumbnail {
   width: 100%;
   object-fit: cover;
-}
-
-.preloader {
-  position: absolute;
-  inset: 0;
+  object-position: center;
 }
